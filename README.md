@@ -9,6 +9,7 @@ A simple request to the Mavel's API using NodeJs
     npm install js-md5
     npm install node-rest-client
     npm install request
+    npm install util
 ```
 ## Then
   Create a simple .js file e copy / paste this content
