@@ -1,22 +1,30 @@
 # marvelApi_NodeJs
 A simple request to the Mavel's API using NodeJs
 
- - ##First 
+
+##First 
   Install this plugins
+  
 ```sh
     npm install js-md5
     npm install node-rest-client
     npm install request
 ```
- - ## Then
+## Then
   Create a simple .js file e copy / paste this content
+  
   The request that i made is for the spider man ( my favourite by the way haha ) 
+  
   But you can change whathever do you want ;)
+  
   Just don't forget to change de request URL
+  
   ```sh
   url: "http://gateway.marvel.com:80/v1/public/characters/1009610?" + ---> 1009610 for SpiderMan
   ```
-  ### marvelApiRequest.js
+  
+### marvelApiRequest.js
+
   
 ```sh
 var md5 = require('js-md5');
