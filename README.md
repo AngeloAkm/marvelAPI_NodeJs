@@ -58,7 +58,7 @@ var x = request({
         return;
     }
     console.log(" ");
-    console.log("RESPOSTA: " + util.inspect(body, false, null));
+    console.log("Return from Marvel API: " + util.inspect(body, false, null));
     console.log(" ");
 });
 
