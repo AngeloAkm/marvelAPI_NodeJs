@@ -15,7 +15,7 @@ A simple request to the Mavel's API using NodeJs
   
   The request that i made is for the spider man ( my favourite by the way haha ) 
   
-  But you can change whathever do you want ;)
+  But you can change whatever do you want ;)
   
   Just don't forget to change de request URL
   
