@@ -4,8 +4,8 @@ const util = require('util');
 var request = require('request');
 
 
-var publicKey = 'SUA_CHAVE_PUBLICA';
-var privateKey = 'SUA_CHAVE_PRIVADA';
+var publicKey = 'YOUR_PUBLIC_KEY';
+var privateKey = 'YOUR_PRIVATE_KEY';
 
 var currentTime = Date.now();
 
