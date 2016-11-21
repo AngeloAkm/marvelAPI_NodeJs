@@ -1,4 +1,4 @@
-# marvelApi_NodeJs
+# Marvel API with NodeJS
 A simple request to the Mavel's API using NodeJs
 
 
