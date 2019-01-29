@@ -3,25 +3,21 @@ var client = require('node-rest-client').Client;
 const util = require('util');
 var request = require('request');
 
-
 var publicKey = 'YOUR_PUBLIC_KEY';
 var privateKey = 'YOUR_PRIVATE_KEY';
 
 var currentTime = Date.now();
-
 var byteArray = md5.array(currentTime + privateKey + publicKey);
+var hash = new String(toHexString(byteArray));
 
 console.log("ByteArray " + byteArray);
+console.log("Hash " + hash);
 
-var result = new String(toHexString(byteArray));
-
-console.log("Result " + result);
-
-var x = request({
+var requestReturn = request({
     url: "http://gateway.marvel.com:80/v1/public/characters/1009610?" +
         "ts=" + currentTime +
         "&apikey=" + publicKey +
-        "&hash=" + result
+        "&hash=" + hash
 
 }, function (err, response, body) {
     if (err) {
@@ -29,7 +25,7 @@ var x = request({
         return;
     }
     console.log(" ");
-    console.log("RESPOSTA: " + util.inspect(body, false, null));
+    console.log("RETURN: " + util.inspect(body, false, null));
     console.log(" ");
 });
 
@@ -46,6 +42,5 @@ function toByteArray(str) {
     for (var i = 0; i < buffer.length; i++) {
         myBuffer.push(buffer[i]);
     }
-
     return myBuffer;
 }
